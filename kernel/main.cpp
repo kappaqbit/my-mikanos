@@ -78,43 +78,5 @@ extern "C" void KernelMain(const FrameBufferConfig& frame_buffer_config) {
         }
     }
 
-    /*
-    for (int x = 0; x < frame_buffer_config.horizontal_resolution; ++x) {
-        for (int y = 0; y < frame_buffer_config.vertical_resolution; ++y) {
-            pixel_writer->Write(x, y, {255, 255, 255});
-        }
-    }
-    for (int x = 0; x < 200; ++x) {
-        for (int y = 0; y < 200; ++y) {
-            pixel_writer->Write(100 + x, 100 + y, {15,128,15});
-        }
-    }
-    for (int x = 0; x < 50; ++x) {
-        for (int y = 0; y < 50; ++y) {
-            pixel_writer->Write(125 + x, 150 + y, {0, 0, 0});
-        }
-    }
-    for (int x = 0; x < 50; ++x) {
-        for (int y = 0; y < 50; ++y) {
-            pixel_writer->Write(225 + x, 150 + y, {0, 0, 0});
-        }
-    }
-    for (int x = 0; x < 50; ++x) {
-        for (int y = 0; y < 75; ++y) {
-            pixel_writer->Write(175 + x, 200 + y, {0, 0, 0});
-        }
-    }
-    for (int x = 0; x < 25; ++x) {
-        for (int y = 0; y < 75; ++y) {
-            pixel_writer->Write(150 + x, 225 + y, {0, 0, 0});
-        }
-    }
-    for (int x = 0; x < 25; ++x) {
-        for (int y = 0; y < 75; ++y) {
-            pixel_writer->Write(225 + x, 225 + y, {0, 0, 0});
-        }
-    }
-    */
-
     while (1) __asm__("hlt");
 }
