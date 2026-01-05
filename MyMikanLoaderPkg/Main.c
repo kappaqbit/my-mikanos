@@ -363,7 +363,7 @@ EFI_STATUS EFIAPI UefiMain(
     }
 
     CopyLoadSegments(kernel_endr);
-    Print(L"Kernel: 0x%01x - 0x%01x\n", status);
+    Print(L"Kernel: 0x%01x - 0x%01x\n", kernel_first_addr, kernel_last_addr);
 
     status = gBS->FreePool(kernel_buffer);
     if (EFI_ERROR(status)) {
