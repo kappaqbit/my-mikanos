@@ -30,7 +30,7 @@ kernel.elf: $(OBJS) Makefile
 	clang $(CPPFLAGS) $(CFLAGS) -c $<
 
 .%.d: %.c
-	clang $(CPPFLAGS) &(CFLAGS) -MM $< > $@
+	clang $(CPPFLAGS) $(CFLAGS) -MM $< > $@
 	$(eval OBJ = $(<:.c=.o))
 	sed --in-place 's|$(notdir $(OBJ))|$(OBJ)|' $@
 
