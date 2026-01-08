@@ -1,6 +1,6 @@
 #pragma once
 
-#include <cstdint>
+// #include <cstdint> to pass not used directly warning
 #include "graphics.hpp"
 
 void WriteAscii(PixelWriter& writer, int x, int y, char c, const PixelColor& color);
